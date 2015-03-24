@@ -42,6 +42,10 @@ Pod::Spec.new do |s|
   # Before we can get OS X deployment working, we'll need to use sub-specs to
   # separate out the source files for OS X vs. iOS
   # s.subspec 'OSX' do |so|
+
+    s.osx.frameworks          = [ 'VideoToolbox', 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreMedia',
+                            'CoreVideo', 'OpenGL', 'Foundation', 'CoreGraphics' ]
+
     s.osx.source_files        = [ 'mixers/**/*.h*', 'mixers/**/*.cpp', 'mixers/**/*.m*', 
                             'rtmp/**/*.h*', 'rtmp/**/*.cpp', 'rtmp/**/*.m*',
                             'sources/**/*.h*', 'sources/**/*.cpp', 'sources/**/*.m*',
@@ -50,8 +54,6 @@ Pod::Spec.new do |s|
                             'transforms/**/*.h*', 'transforms/**/*.cpp', 'transforms/**/*.m*',
                             'api/OSX/*.h*', 'api/OSX/*.m*',
                             'filters/**/*.cpp', 'filters/**/*.h*' ]
-    s.osx.frameworks          = [ 'VideoToolbox', 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreMedia',
-                            'CoreVideo', 'Foundation', 'CoreGraphics' ]
 
     s.osx.deployment_target = '10.7'
   # end
