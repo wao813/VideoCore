@@ -43,8 +43,6 @@
 		5FBF97831AC1F502009A19E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5FBF97851AC1F502009A19E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5FBF97881AC1F502009A19E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5FBF97931AC1F502009A19E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FBF97941AC1F502009A19E8 /* SampleBroadcasterOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleBroadcasterOSXTests.m; sourceTree = "<group>"; };
 		7265D5DC191994B80042DC3B /* SampleBroadcaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBroadcaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7265D5DF191994B80042DC3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7265D5E1191994B80042DC3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,29 +121,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5FBF97911AC1F502009A19E8 /* SampleBroadcasterOSXTests */ = {
-			isa = PBXGroup;
-			children = (
-				5FBF97941AC1F502009A19E8 /* SampleBroadcasterOSXTests.m */,
-				5FBF97921AC1F502009A19E8 /* Supporting Files */,
-			);
-			path = SampleBroadcasterOSXTests;
-			sourceTree = "<group>";
-		};
-		5FBF97921AC1F502009A19E8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5FBF97931AC1F502009A19E8 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		7265D5D3191994B80042DC3B = {
 			isa = PBXGroup;
 			children = (
 				7265D5E5191994B80042DC3B /* SampleBroadcaster */,
 				5FBF977A1AC1F502009A19E8 /* SampleBroadcasterOSX */,
-				5FBF97911AC1F502009A19E8 /* SampleBroadcasterOSXTests */,
 				7265D5DE191994B80042DC3B /* Frameworks */,
 				7265D5DD191994B80042DC3B /* Products */,
 				7314D3F09AB131B5F8068CD5 /* Pods */,

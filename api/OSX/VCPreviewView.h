@@ -23,9 +23,9 @@
  
  */
 
-#import <UIKit/UIKit.h>
+#import <AppKit/AppKit.h>
 
-@interface VCPreviewView : UIView
+@interface VCPreviewView : NSView
 
 - (void) drawFrame: (CVPixelBufferRef) pixelBuffer;
 

@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "VCSimpleSession.h"
+
+#import <VideoCore/api/OSX/VCSimpleSession.h>
 
 @interface ViewController () <VCSessionDelegate>
 @property (nonatomic, retain) VCSimpleSession* session;
@@ -27,19 +28,6 @@
     _session.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)dealloc {
-    [_btnConnect release];
-    [_previewView release];
-    [_session release];
-    
-    [super dealloc];
-}
 
 - (IBAction)btnConnectTouch:(id)sender {
     
@@ -60,13 +48,13 @@
 {
     switch(state) {
         case VCSessionStateStarting:
-            [self.btnConnect setTitle:@"Connecting" forState:UIControlStateNormal];
+            [self.previewButton setTitle:@"Connecting"];
             break;
         case VCSessionStateStarted:
-            [self.btnConnect setTitle:@"Disconnect" forState:UIControlStateNormal];
+            [self.previewButton setTitle:@"Disconnect"];
             break;
         default:
-            [self.btnConnect setTitle:@"Connect" forState:UIControlStateNormal];
+            [self.previewButton setTitle:@"Connect"];
             break;
     }
 }

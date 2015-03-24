@@ -32,7 +32,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <AVFoundation/AVFoundation.h>
-#import <UIKit/UIKit.h>
+#import <AppKit/AppKit.h>
 
 @class VCSimpleSession;
 
@@ -64,7 +64,7 @@ typedef NS_ENUM(NSInteger, VCCameraState)
 @interface VCSimpleSession : NSObject
 
 @property (nonatomic, readonly) VCSessionState rtmpSessionState;
-@property (nonatomic, strong, readonly) UIView* previewView;
+@property (nonatomic, strong, readonly) NSView* previewView;
 
 /*! Setters / Getters for session properties */
 @property (nonatomic, assign) CGSize            videoSize;      // Change will not take place until the next RTMP Session

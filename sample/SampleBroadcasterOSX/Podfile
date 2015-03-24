@@ -4,5 +4,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 # See: http://guides.cocoapods.org/making/making-a-cocoapod.html#release
 # Once the pod has been released, use a version number here instead of a path.
-pod 'VideoCore/OSX', :git => "git@github.com:wao813/VideoCore.git"
-# pod 'VideoCore/OSX', path: '../..'
+# pod 'VideoCore/OSX', :git => "git@github.com:wao813/VideoCore.git"
+pod 'VideoCore', path: '../..'

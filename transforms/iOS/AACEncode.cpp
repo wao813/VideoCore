@@ -51,7 +51,7 @@ namespace videocore { namespace iOS {
         
         for (UInt32 i=0; i < numEncoders; ++i) {
             if (encoderDescriptions[i].mSubType == kAudioFormatMPEG4AAC &&
-                encoderDescriptions[i].mManufacturer == kAppleHardwareAudioCodecManufacturer) isAvailable = true;
+                encoderDescriptions[i].mManufacturer == 'aphw') isAvailable = true;
         }
         
         return isAvailable;
@@ -123,12 +123,12 @@ namespace videocore { namespace iOS {
             {
                 kAudioEncoderComponentType,
                 subtype,
-                kAppleSoftwareAudioCodecManufacturer
+                'aphw'
             },
             {
                 kAudioEncoderComponentType,
                 subtype,
-                kAppleHardwareAudioCodecManufacturer
+                'aphw'
             }
         };
         
@@ -284,12 +284,12 @@ namespace videocore { namespace iOS {
                 {
                     kAudioEncoderComponentType,
                     subtype,
-                    kAppleSoftwareAudioCodecManufacturer
+                    'aphw'
                 },
                 {
                     kAudioEncoderComponentType,
                     subtype,
-                    kAppleHardwareAudioCodecManufacturer
+                    'aphw'
                 }
             };
             AudioConverterNewSpecific(&m_in, &m_out, 2,requestedCodecs, &m_audioConverter);
