@@ -1,1 +1,1 @@
-../../../../../VideoCore/stream/IStreamSession.hpp
+../../../../../../../../stream/IStreamSession.hpp

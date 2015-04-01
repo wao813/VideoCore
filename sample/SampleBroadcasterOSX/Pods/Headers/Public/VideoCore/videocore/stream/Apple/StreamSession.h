@@ -1,1 +1,1 @@
-../../../../../../VideoCore/stream/Apple/StreamSession.h
+../../../../../../../../../stream/Apple/StreamSession.h

@@ -23,8 +23,8 @@
 
  */
 
-#import <videocore/api/iOS/VCSimpleSession.h>
-#import <videocore/api/iOS/VCPreviewView.h>
+#import <videocore/api/OSX/VCSimpleSession.h>
+#import <videocore/api/OSX/VCPreviewView.h>
 
 #include <videocore/rtmp/RTMPSession.h>
 #include <videocore/transforms/RTMP/AACPacketizer.h>

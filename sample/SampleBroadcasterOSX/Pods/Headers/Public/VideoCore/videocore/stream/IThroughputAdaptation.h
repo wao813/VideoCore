@@ -1,1 +1,1 @@
-../../../../../VideoCore/stream/IThroughputAdaptation.h
+../../../../../../../../stream/IThroughputAdaptation.h

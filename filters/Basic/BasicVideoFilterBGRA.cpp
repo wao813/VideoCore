@@ -4,11 +4,16 @@
 #include <TargetConditionals.h>
 
 
-#ifdef TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
 
-#include <OpenGLES/ES2/gl.h>
-#include <OpenGLES/ES3/gl.h>
-#include <videocore/sources/iOS/GLESUtil.h>
+//#include <OpenGLES/ES2/gl.h>
+//#include <OpenGLES/ES3/gl.h>
+//#include <videocore/sources/iOS/GLESUtil.h>
+//#include <videocore/filters/FilterFactory.h>
+
+#elif TARGET_OS_MAC
+#include <OpenGL/gl3.h>
+#include <videocore/sources/OSX/GLUtil.h>
 #include <videocore/filters/FilterFactory.h>
 
 #endif

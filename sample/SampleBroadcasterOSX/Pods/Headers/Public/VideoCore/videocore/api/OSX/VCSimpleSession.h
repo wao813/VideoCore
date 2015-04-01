@@ -1,1 +1,1 @@
-../../../../../../VideoCore/api/OSX/VCSimpleSession.h
+../../../../../../../../../api/OSX/VCSimpleSession.h

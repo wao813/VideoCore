@@ -22,10 +22,10 @@
  THE SOFTWARE.
  
  */
-#include <videocore/transforms/iOS/AACEncode.h>
+#include <videocore/transforms/OSX/AACEncode.h>
 #include <sstream>
 
-namespace videocore { namespace iOS {
+namespace videocore { namespace OSX {
     
     Boolean IsAACHardwareEncoderAvailable(void)
     {

@@ -10,15 +10,12 @@ Pod::Spec.new do |s|
   s.homepage            = "https://github.com/jgh-/VideoCore"
   s.license             = 'MIT'
   s.authors             = { "James Hurley" => "jamesghurley@gmail.com" }
-  s.source              = { :git => "https://github.com/wao813/VideoCore", :tag => s.version.to_s }
-
+  # s.source              = { :git => "https://github.com/wao813/VideoCore", :tag => s.version.to_s }
+  # s.source              = { path: '../..' }
   s.requires_arc        = false
 
   s.header_dir          = 'videocore'
   s.header_mappings_dir = '.'
-
-  s.frameworks          = [ 'VideoToolbox', 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreMedia',
-                            'CoreVideo', 'OpenGLES', 'Foundation', 'CoreGraphics' ]
 
   s.libraries           = 'c++'
 
@@ -28,30 +25,44 @@ Pod::Spec.new do |s|
 
   s.xcconfig            = { "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/boost" }
 
-  s.subspec 'iOS' do |si|
-    s.ios.source_files        = [ 'mixers/**/*.h*', 'mixers/**/*.cpp', 'mixers/**/*.m*', 
-                            'rtmp/**/*.h*', 'rtmp/**/*.cpp', 'rtmp/**/*.m*',
-                            'sources/**/*.h*', 'sources/**/*.cpp', 'sources/**/*.m*',
-                            'stream/**/*.h*', 'stream/**/*.cpp', 'stream/**/*.m*',
-                            'system/**/*.h*', 'system/**/*.cpp', 'system/**/*.m*',
-                            'transforms/**/*.h*', 'transforms/**/*.cpp', 'transforms/**/*.m*',
-                            'api/iOS/*.h*', 'api/iOS/*.m*',
-                            'filters/**/*.cpp', 'filters/**/*.h*' ]
+  # s.subspec 'iOS' do |si|
+  #   s.ios.source_files        = [ 'mixers/**/*.h*', 'mixers/**/*.cpp', 'mixers/**/*.m*', 
+  #                           'rtmp/**/*.h*', 'rtmp/**/*.cpp', 'rtmp/**/*.m*',
+  #                           'sources/**/*.h*', 'sources/**/*.cpp', 'sources/**/*.m*',
+  #                           'stream/**/*.h*', 'stream/**/*.cpp', 'stream/**/*.m*',
+  #                           'system/**/*.h*', 'system/**/*.cpp', 'system/**/*.m*',
+  #                           'transforms/**/*.h*', 'transforms/**/*.cpp', 'transforms/**/*.m*',
+  #                           'api/iOS/*.h*', 'api/iOS/*.m*',
+  #                           'filters/**/*.cpp', 'filters/**/*.h*' ]
+  #   s.ios.frameworks          = [ 'VideoToolbox', 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreMedia',
+  #                                 'CoreVideo', 'OpenGLES', 'Foundation', 'CoreGraphics' ]
 
-    s.ios.deployment_target = '5.0'
-  end
+  #   s.ios.deployment_target = '5.0'
+  # end
   # Before we can get OS X deployment working, we'll need to use sub-specs to
   # separate out the source files for OS X vs. iOS
-  s.subspec 'OSX' do |so|
-    s.osx.source_files        = [ 'mixers/**/*.h*', 'mixers/**/*.cpp', 'mixers/**/*.m*', 
+  # s.subspec 'OSX' do |so|
+
+    s.osx.frameworks          = [ 'VideoToolbox', 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreMedia',
+                            'CoreVideo', 'OpenGL', 'Foundation', 'CoreGraphics' ]
+
+    s.osx.source_files        = [ 'mixers/*.h*', 'mixers/*.cpp', 'mixers/*.m*', 
+                            'mixers/Apple/*.h*', 'mixers/Apple/*.cpp', 'mixers/Apple/*.m*',
+                            'mixers/OSX/*.h*', 'mixers/OSX/*.cpp', 'mixers/OSX/*.m*',
                             'rtmp/**/*.h*', 'rtmp/**/*.cpp', 'rtmp/**/*.m*',
-                            'sources/**/*.h*', 'sources/**/*.cpp', 'sources/**/*.m*',
+                            'sources/*.h*', 'sources/*.cpp', 'sources/*.m*',
+                            'sources/Apple/*.h*', 'sources/Apple/*.cpp', 'sources/Apple/*.m*',
+                            'sources/OSX/*.h*', 'sources/OSX/*.cpp', 'sources/OSX/*.m*',
                             'stream/**/*.h*', 'stream/**/*.cpp', 'stream/**/*.m*',
                             'system/**/*.h*', 'system/**/*.cpp', 'system/**/*.m*',
-                            'transforms/**/*.h*', 'transforms/**/*.cpp', 'transforms/**/*.m*',
+                            'transforms/*.h*', 'transforms/*.cpp', 'transforms/*.m*',
+                            'transforms/Apple/*.h*', 'transforms/Apple/*.cpp', 'transforms/Apple/*.m*',
+                            'transforms/OSX/*.h*', 'transforms/OSX/*.cpp', 'transforms/OSX/*.m*',
+                            'transforms/RTMP/*.h*', 'transforms/RTMP/*.cpp', 'transforms/RTMP/*.m*',
+
                             'api/OSX/*.h*', 'api/OSX/*.m*',
                             'filters/**/*.cpp', 'filters/**/*.h*' ]
 
     s.osx.deployment_target = '10.7'
-  end
+  # end
 end

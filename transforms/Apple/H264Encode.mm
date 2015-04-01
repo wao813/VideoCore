@@ -187,7 +187,7 @@ namespace videocore { namespace Apple {
                                                   @(kCVPixelFormatType_32BGRA),
                                                   (NSString*) kCVPixelBufferWidthKey : @(m_frameW),
                                                   (NSString*) kCVPixelBufferHeightKey : @(m_frameH),
-                                                  (NSString*) kCVPixelBufferOpenGLESCompatibilityKey : @YES,
+                                                  (NSString*) kCVPixelBufferOpenGLCompatibilityKey : @YES,
                                                   (NSString*) kCVPixelBufferIOSurfacePropertiesKey : @{}};
             
             err = VTCompressionSessionCreate(

@@ -1,1 +1,1 @@
-../../../../../VideoCore/stream/TCPThroughputAdaptation.h
+../../../../../../../../stream/TCPThroughputAdaptation.h

@@ -1,1 +1,1 @@
-../../../../../../VideoCore/filters/Basic/GrayscaleVideoFilter.h
+../../../../../../../../../filters/Basic/GrayscaleVideoFilter.h

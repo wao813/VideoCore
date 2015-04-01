@@ -1,1 +1,1 @@
-../../../../../../VideoCore/system/h264/Golomb.h
+../../../../../../../../../system/h264/Golomb.h

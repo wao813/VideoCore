@@ -19,20 +19,6 @@
 // Please contact the author.
 // Version: 0.3.0.3.
 
-// VideoCore/OSX
-#define COCOAPODS_POD_AVAILABLE_VideoCore_OSX
-// This library does not follow semantic-versioning,
-// so we were not able to define version macros.
-// Please contact the author.
-// Version: 0.3.0.3.
-
-// VideoCore/iOS
-#define COCOAPODS_POD_AVAILABLE_VideoCore_iOS
-// This library does not follow semantic-versioning,
-// so we were not able to define version macros.
-// Please contact the author.
-// Version: 0.3.0.3.
-
 // boost
 #define COCOAPODS_POD_AVAILABLE_boost
 #define COCOAPODS_VERSION_MAJOR_boost 1

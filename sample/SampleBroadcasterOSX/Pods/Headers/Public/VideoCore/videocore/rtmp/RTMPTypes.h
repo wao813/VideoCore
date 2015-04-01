@@ -1,1 +1,1 @@
-../../../../../VideoCore/rtmp/RTMPTypes.h
+../../../../../../../../rtmp/RTMPTypes.h

@@ -20,16 +20,6 @@ PODS:
     - boost (~> 1.51.0)
     - glm (~> 0.9.4.6)
     - UriParser-cpp (~> 0.1.3)
-    - VideoCore/iOS (= 0.3.0.3)
-    - VideoCore/OSX (= 0.3.0.3)
-  - VideoCore/iOS (0.3.0.3):
-    - boost (~> 1.51.0)
-    - glm (~> 0.9.4.6)
-    - UriParser-cpp (~> 0.1.3)
-  - VideoCore/OSX (0.3.0.3):
-    - boost (~> 1.51.0)
-    - glm (~> 0.9.4.6)
-    - UriParser-cpp (~> 0.1.3)
 
 DEPENDENCIES:
   - VideoCore (from `../..`)
@@ -38,15 +28,10 @@ EXTERNAL SOURCES:
   VideoCore:
     :path: ../..
 
-CHECKOUT OPTIONS:
-  VideoCore:
-    :commit: 2b924cfdb8d5eab8c66d043f9bdbcce8601e49e1
-    :git: git@github.com:wao813/VideoCore.git
-
 SPEC CHECKSUMS:
   boost: 581038adda16d11045576013ad27e3eeeabc2d10
   glm: 840dd35fe3cc445935accf81ffd1384dad532ee7
   UriParser-cpp: e6df3fd87445ba4ab37a72acafb4f03bc39db524
-  VideoCore: 846cb986710b957b2b0bb73bd6c72ee8e6dff241
+  VideoCore: fa391fed5f84330f4a90b05fd8312f0ee02316c6
 
 COCOAPODS: 0.35.0

@@ -1,1 +1,1 @@
-../../../../../VideoCore/rtmp/RTMPSession.h
+../../../../../../../../rtmp/RTMPSession.h
