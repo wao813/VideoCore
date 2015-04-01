@@ -376,6 +376,7 @@
 		5FBF97961AC1F502009A19E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -398,6 +399,7 @@
 		5FBF97971AC1F502009A19E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;

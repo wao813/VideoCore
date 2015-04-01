@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import <VideoCore/api/OSX/VCSimpleSession.h>
+#import <VideoCoreConversion/api/OSX/VCSimpleSession.h>
 
 @interface ViewController () <VCSessionDelegate>
 @property (nonatomic, retain) VCSimpleSession* session;
