@@ -1,1 +1,0 @@
-../../../../../../../../../sources/OSX/CameraSource.h

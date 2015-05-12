@@ -12,6 +12,13 @@
 #define COCOAPODS_VERSION_MINOR_UriParser_cpp 1
 #define COCOAPODS_VERSION_PATCH_UriParser_cpp 3
 
+// VideoCore
+#define COCOAPODS_POD_AVAILABLE_VideoCore
+// This library does not follow semantic-versioning,
+// so we were not able to define version macros.
+// Please contact the author.
+// Version: 0.3.0.3.
+
 // VideoCore/OSX
 #define COCOAPODS_POD_AVAILABLE_VideoCore_OSX
 // This library does not follow semantic-versioning,
