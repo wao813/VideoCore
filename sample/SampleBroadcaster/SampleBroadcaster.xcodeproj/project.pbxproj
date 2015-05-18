@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1A7B35651942542400AB5FD6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7B35641942542400AB5FD6 /* GLKit.framework */; };
 		1A7B35671942564600AB5FD6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7B35661942564600AB5FD6 /* libPods.a */; };
+		5F8FA0E01B0457B700F432D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FA0DF1B0457B700F432D8 /* AppDelegate.m */; };
+		5F8FA0E21B0457B700F432D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FA0E11B0457B700F432D8 /* main.m */; };
+		5F8FA0E41B0457B700F432D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F8FA0E31B0457B700F432D8 /* Images.xcassets */; };
+		5F8FA0E71B0457B700F432D8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8FA0E51B0457B700F432D8 /* MainMenu.xib */; };
 		7265D5E0191994B80042DC3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7265D5DF191994B80042DC3B /* Foundation.framework */; };
 		7265D5E2191994B80042DC3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7265D5E1191994B80042DC3B /* CoreGraphics.framework */; };
 		7265D5E4191994B80042DC3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7265D5E3191994B80042DC3B /* UIKit.framework */; };
@@ -29,6 +33,15 @@
 /* Begin PBXFileReference section */
 		1A7B35641942542400AB5FD6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		1A7B35661942564600AB5FD6 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		5F8FA0DA1B0457B700F432D8 /* SampleBroadcasterOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBroadcasterOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F8FA0DD1B0457B700F432D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8FA0DE1B0457B700F432D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F8FA0DF1B0457B700F432D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F8FA0E11B0457B700F432D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F8FA0E31B0457B700F432D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F8FA0E61B0457B700F432D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5F8FA0F11B0457B700F432D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8FA0F21B0457B700F432D8 /* SampleBroadcasterOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleBroadcasterOSXTests.m; sourceTree = "<group>"; };
 		7265D5DC191994B80042DC3B /* SampleBroadcaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleBroadcaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7265D5DF191994B80042DC3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7265D5E1191994B80042DC3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5F8FA0D71B0457B700F432D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7265D5D9191994B80042DC3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,10 +97,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F8FA0DB1B0457B700F432D8 /* SampleBroadcasterOSX */ = {
+			isa = PBXGroup;
+			children = (
+				5F8FA0DE1B0457B700F432D8 /* AppDelegate.h */,
+				5F8FA0DF1B0457B700F432D8 /* AppDelegate.m */,
+				5F8FA0E31B0457B700F432D8 /* Images.xcassets */,
+				5F8FA0E51B0457B700F432D8 /* MainMenu.xib */,
+				5F8FA0DC1B0457B700F432D8 /* Supporting Files */,
+			);
+			path = SampleBroadcasterOSX;
+			sourceTree = "<group>";
+		};
+		5F8FA0DC1B0457B700F432D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F8FA0DD1B0457B700F432D8 /* Info.plist */,
+				5F8FA0E11B0457B700F432D8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F8FA0EF1B0457B700F432D8 /* SampleBroadcasterOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F8FA0F21B0457B700F432D8 /* SampleBroadcasterOSXTests.m */,
+				5F8FA0F01B0457B700F432D8 /* Supporting Files */,
+			);
+			path = SampleBroadcasterOSXTests;
+			sourceTree = "<group>";
+		};
+		5F8FA0F01B0457B700F432D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F8FA0F11B0457B700F432D8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7265D5D3191994B80042DC3B = {
 			isa = PBXGroup;
 			children = (
 				7265D5E5191994B80042DC3B /* SampleBroadcaster */,
+				5F8FA0DB1B0457B700F432D8 /* SampleBroadcasterOSX */,
+				5F8FA0EF1B0457B700F432D8 /* SampleBroadcasterOSXTests */,
 				7265D5DE191994B80042DC3B /* Frameworks */,
 				7265D5DD191994B80042DC3B /* Products */,
 				7314D3F09AB131B5F8068CD5 /* Pods */,
@@ -91,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				7265D5DC191994B80042DC3B /* SampleBroadcaster.app */,
+				5F8FA0DA1B0457B700F432D8 /* SampleBroadcasterOSX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +213,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5F8FA0D91B0457B700F432D8 /* SampleBroadcasterOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F8FA0F81B0457B700F432D8 /* Build configuration list for PBXNativeTarget "SampleBroadcasterOSX" */;
+			buildPhases = (
+				5F8FA0D61B0457B700F432D8 /* Sources */,
+				5F8FA0D71B0457B700F432D8 /* Frameworks */,
+				5F8FA0D81B0457B700F432D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleBroadcasterOSX;
+			productName = SampleBroadcasterOSX;
+			productReference = 5F8FA0DA1B0457B700F432D8 /* SampleBroadcasterOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
 		7265D5DB191994B80042DC3B /* SampleBroadcaster */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7265D611191994B80042DC3B /* Build configuration list for PBXNativeTarget "SampleBroadcaster" */;
@@ -179,6 +257,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = videocore;
+				TargetAttributes = {
+					5F8FA0D91B0457B700F432D8 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
 			};
 			buildConfigurationList = 7265D5D7191994B80042DC3B /* Build configuration list for PBXProject "SampleBroadcaster" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -194,11 +277,21 @@
 			projectRoot = "";
 			targets = (
 				7265D5DB191994B80042DC3B /* SampleBroadcaster */,
+				5F8FA0D91B0457B700F432D8 /* SampleBroadcasterOSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5F8FA0D81B0457B700F432D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8FA0E41B0457B700F432D8 /* Images.xcassets in Resources */,
+				5F8FA0E71B0457B700F432D8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7265D5DA191994B80042DC3B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +338,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5F8FA0D61B0457B700F432D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8FA0E21B0457B700F432D8 /* main.m in Sources */,
+				5F8FA0E01B0457B700F432D8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7265D5D8191994B80042DC3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +360,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5F8FA0E51B0457B700F432D8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F8FA0E61B0457B700F432D8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		7265D5E8191994B80042DC3B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -277,6 +387,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5F8FA0F41B0457B700F432D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SampleBroadcasterOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F8FA0F51B0457B700F432D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SampleBroadcasterOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		7265D60F191994B80042DC3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -408,6 +563,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5F8FA0F81B0457B700F432D8 /* Build configuration list for PBXNativeTarget "SampleBroadcasterOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F8FA0F41B0457B700F432D8 /* Debug */,
+				5F8FA0F51B0457B700F432D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7265D5D7191994B80042DC3B /* Build configuration list for PBXProject "SampleBroadcaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
